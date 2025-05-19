@@ -7,6 +7,7 @@
 # Environment files
 .env
 .env.*
+db_credentials.php
 
 # Cache and logs
 /cache/
@@ -29,4 +30,9 @@
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db 
+Thumbs.db
+
+# Database backups
+*.sql
+*.sqlite
+*.db 

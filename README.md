@@ -11,17 +11,23 @@ En modern bloggplattform utvecklad i PHP med följande funktioner:
 
 ## Installation
 1. Klona detta repository
-2. Importera `d0019e_blog.sql` till din MySQL-databas
-3. Konfigurera `db_credentials.php` med dina databasuppgifter
+2. Kopiera `db_credentials.example.php` till `db_credentials.php` och konfigurera med dina databasuppgifter
+3. Importera databasstrukturen från `database/schema.sql`
 4. Placera filerna i din webbserver (t.ex. xampp/htdocs)
+
+## Säkerhet
+- CSRF-skydd
+- XSS-skydd
+- Säker filuppladdning
+- Lösenordshashning
+- Känsliga uppgifter är exkluderade från versionshantering
 
 ## Systemkrav
 - PHP 7.1 eller högre
 - MySQL 5.7 eller högre
 - Webbserver (Apache/Nginx)
 
-## Säkerhet
-- CSRF-skydd
-- XSS-skydd
-- Säker filuppladdning
-- Lösenordshashning 
+## Viktigt
+- Känsliga filer som innehåller databasuppgifter eller lösenord är exkluderade från repositoryt
+- Se till att konfigurera dina egna säkra uppgifter lokalt
+- Följ säkerhetsbestämmelser för din miljö 

@@ -1,0 +1,59 @@
+/* Layout styling */
+.sidebar-menu {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+}
+
+.sidebar-menu .nav-link {
+    color: #333;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar-menu .nav-link:hover {
+    background-color: #e9ecef;
+    color: #0d6efd;
+}
+
+.content-area {
+    min-height: 500px;
+}
+
+.blog-card {
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.info-sidebar .card {
+    border-left: 4px solid #0d6efd;
+}
+
+.blogger-list .list-group-item {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.blogger-list .list-group-item:first-child {
+    border-top: none;
+}
+
+.blogger-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .sidebar-menu {
+        margin-bottom: 1rem;
+    }
+    
+    .info-sidebar {
+        margin-top: 1rem;
+    }
+} 
